@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    color: rgb(112, 110, 110);
+}
+
+body{
+  font-family: Raleway;
+  line-height: 20px;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+main{
+  width: 70%;
+  margin-top: 200px;
+}
+
+#header {
+  padding: 15px 50px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header-img{
+  width: 300px;
+  padding-left: 50px;
+}
+
+#header ul{
+  list-style-type: none;
+  display: flex;
+}
+
+#nav-bar{
+  display: inline-block;
+}
+
+nav li:not(:last-of-type){
+  margin-right: 40px;
+}
+
+#sub{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+
+}
+
+.sub-image, .sub-form{
+  width: 50%;
+}
+
+.sub-image{
+  display: grid;
+}
+
+.sub-form{
+    display: flex;
+  justify-content: center;
+}
+
+#sub-img{
+  width: 100%;
+  height: auto;
+  grid-area: 1/1;
+  transition: opacity 1s
+}
+
+.img1{
+  opacity: 1;
+}
+
+.img2{
+  opacity: 0;
+}
+
+.img2:hover {
+  opacity: 1;
+}
+
+.img1:hover{
+  opacity: 0;
+}
+
+input{
+  color: rgb(112, 110, 110);
+  margin: 20px ;
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid black;
+  height: auto;
+  min-height: 3em;
+}
+
+input:not(:last-of-type){
+  border: none;
+  border-bottom: 1px solid black;  
+}
+
+a{
+  color: rgb(112, 110, 110);
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+}
+
+#form p{
+  margin: 20px; 
+}
+
+#form{
+  align-self: center;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+#header:hover{
+  background-color: #fcfcfcef;
+}
+
+.shops {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#shop {
+  margin: 50px 0;  
+}
+
+.shop-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto
+}
+
+.shop-items img{
+  width: 200px;
+}
+
+.img {
+  margin: 40px;
+}
+
+.price {
+  margin-top: 350px;
+  margin-left: -230px;
+  min-width: 200px
+}
+
+#video{
+  margin-top: 490px;
+  margin-left: -700px
+}
+
+footer {
+  background-color: white;
+  padding: 20px 20px 5px 0;
+  line-height: 0.8rem;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+#foot-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#foot-menu ul li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+@media(max-width: 900px){
+  .sub-image{
+    width: 0%;
+  }
+  .sub-form{
+    width: 100%;
+}
+}
